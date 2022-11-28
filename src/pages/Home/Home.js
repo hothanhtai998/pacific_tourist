@@ -1,6 +1,19 @@
+import Slide from '~/layouts/components/Slide';
+import { images } from '~/assets/images';
+
 function Home() {
-    return <h2 style={{ height: 2000 }}>Home page</h2>;
-  }
-  
-  export default Home;
-  
+  const data = {
+    img: images.homeSlide,
+    alt: 'Mountain',
+    subTitle: '',
+    title: '',
+    caption: '',
+  };
+  return (
+    <div>
+      <Slide data={data} />
+    </div>
+  );
+}
+
+export default Home;

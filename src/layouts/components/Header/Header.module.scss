@@ -1,0 +1,43 @@
+.wrapper {
+  // position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 105px;
+  background-color: blue;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--default-width);
+  height: 100%;
+  padding: 0 24px;
+}
+
+.brand {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 28.8px;
+  color: var(--white);
+  margin-right: 1rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+
+  transition: all 0.3s ease 0s;
+  white-space: nowrap;
+}
+.brand span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 12px;
+  color: var(--orange);
+
+  text-transform: uppercase;
+  white-space: nowrap;
+}

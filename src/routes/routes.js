@@ -1,13 +1,13 @@
 //
-import config from '~/config';
+import config from '../config';
 
 //* page
 import Home from '../pages/Home';
-import About from '~/pages/About';
-import Destination from '~/pages/Destination';
-import Hotel from '~/pages/Hotel';
-import Blog from '~/pages/Blog';
-import Contact from '~/pages/Contact';
+import About from '../pages/About';
+import Destination from '../pages/Destination';
+import Hotel from '../pages/Hotel';
+import Blog from '../pages/Blog';
+import Contact from '../pages/Contact';
 
 //* Public Routes
 const publicRoutes = [

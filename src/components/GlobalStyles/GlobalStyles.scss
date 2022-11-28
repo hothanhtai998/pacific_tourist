@@ -27,13 +27,13 @@
   --dark: #343a40;
 
   // header height (line: 2 - at: src/component/Layout/component/Header/Header.module.scss)
-  --default-layout-header-height: 60px;
+  --default-header-height: 105px;
 
   /* container width 
      - line: 8 , at: src/component/Layout/DefaultLayout/DefaultLayout.module.scss
      - line: 11 , at: src/component/Layout/component/Header/Header.module.scss
   */
-  --default-layout-width: 1140px;
+  --default-width: 1140px;
 }
 
 //* reset CSS

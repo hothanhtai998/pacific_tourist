@@ -1,0 +1,731 @@
+header-area
+    container container-sm container-md container-lg
+        logo
+        NavBar
+            home active
+            about
+            destination
+            hotel
+            blog
+            contact
+------------------------------------------------------------------------------------------------------------------
+slider-area
+    overlay
+    container container-sm container-md container-lg
+        row
+            col col-12 col-sm-12 col-md-12 col-lg-7
+                sub-title-large
+                title-large
+                caption-large
+            col col-12 col-sm-12 col-md-12 col-lg-5
+                playVideoBtn
+------------------------------------------------------------------------------------------------------------------
+main-area
+    content-section search-area hotel-area
+        container container-sm container-md container-lg
+            row
+                search-tour
+                hotel
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                    row
+                        col-lg-2-4
+                            place
+                        col-lg-2-4
+                            check-in-date
+                        col-lg-2-4
+                            check-out-date
+                        col-lg-2-4
+                            price
+                        col-lg-2-4
+                            search-large
+    
+    content-section services-icon-area
+        container
+            row
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                row
+                    col col-12 col-sm-12 col-md-12 col-lg-3
+                    col col-12 col-sm-12 col-md-12 col-lg-3
+                    col col-12 col-sm-12 col-md-12 col-lg-3
+                    col col-12 col-sm-12 col-md-12 col-lg-3
+
+    content-section services-area
+        container container-sm container-md container-lg
+            row
+                col col-12 col-sm-12 col-md-12 col-lg-6
+                    col-lg-12
+                        Activities
+                    col-lg-12
+                        Travel
+                    col-lg-12
+                        Guide
+                    col-lg-12
+                        Location
+                col col-12 col-sm-12 col-md-12 col-lg-6
+                    sub-title-large
+                    title-large
+                    caption-large
+                    search button-md
+
+    content-section place-area
+        container
+            row justify-content-center
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                    sub-title-large
+                    title-large
+        container container-2
+            row
+                col col-12 col-sm-12 col-md-4 col-lg-12
+                    dùng thư viện carousel để trượt slide
+
+    content-section tour-area
+        container
+            row justify-content-center
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                    sub-title-large
+                    title-large
+            row justify-content-center
+                col col-12 col-sm-12 col-md-6 col-lg-4
+                    col-item
+                        img
+                        price
+                        text-box
+                            day
+                            'title'
+                            location
+                            ul
+                                li 
+                                li
+                                li
+                ...
+
+    content-section about-img-area
+        overlay
+        container
+
+    content-section about-area
+        container
+            row
+                col col-12 col-sm-12 col-md-6 col-lg-12
+                    row
+                        col col-12 col-sm-12 col-md-6 col-lg-6
+                            img
+                        col col-12 col-sm-12 col-md-6 col-lg-6
+                            sub-title-large
+                            title-large
+                            caption-large
+                            book button-sm
+
+    content-section blog-post-area
+        container
+            row justify-content-center
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                    sub-title-large
+                    title-large
+            row justify-content-center
+                col col-12 col-sm-12 col-md-6 col-lg-4
+                    col-item
+                        img
+                        date
+                            month
+                            year
+                            day
+                        text-box
+                            'title'
+                            read-more button-sm
+                ...
+
+    content-section intro-area
+        container
+            row
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                    img
+                        overlay
+------------------------------------------------------------------------------------------------------------------
+footer-area
+    container
+        row
+            col col-12 col-sm-12 col-md-12  col-lg-12
+                row
+                    col col-12 col-sm-12 col-md-6  col-lg-3
+                        footer-heading
+                        footer-text
+                        ul
+                            li social-icon
+                            ...
+                    col col-12 col-sm-12 col-md-6  col-lg-3
+                        footer-heading
+                        ul
+                            li
+                            ...
+        row justify-content-center
+            col col-12 col-sm-12 col-md-12 col-lg-12
+}
+
+################################################################################################################################################                            
+*************************************************
+******************** ABOUT **********************
+*************************************************
+header-area
+    container container-sm container-md container-lg
+        logo
+        NavBar
+            home
+            about active
+            destination
+            hotel
+            blog
+            contact
+------------------------------------------------------------------------------------------------------------------
+slider-area
+    overlay
+    container container-sm container-md container-lg
+        bread-case
+            home > about
+        about-us
+------------------------------------------------------------------------------------------------------------------
+main-area
+    content-section services-area
+        container container-sm container-md container-lg
+            row
+                col col-12 col-sm-12 col-md-12 col-lg-6
+                    col-lg-12
+                        Activities
+                    col-lg-12
+                        Travel
+                    col-lg-12
+                        Guide
+                    col-lg-12
+                        Location
+                col col-12 col-sm-12 col-md-12 col-lg-6
+                    sub-title-large
+                    title-large
+                    caption-large
+                    search button-md
+
+    content-section about-img-area
+        overlay
+        container
+
+    content-section about-area
+        container
+            row
+                col col-12 col-sm-12 col-md-6 col-lg-12
+                    row
+                        col col-12 col-sm-12 col-md-6 col-lg-6
+                            img
+                        col col-12 col-sm-12 col-md-6 col-lg-6
+                            sub-title-large
+                            title-large
+                            caption-large
+                            book button-sm
+
+    content-section feedback-area
+        overlay
+        container
+            row justify-content-center
+                col col-12 col-sm-12 col-md-12 col-lg-7
+                    sub-title-large
+                    title-large
+            row justify-content-center
+                col col-12 col-sm-12 col-md-6 col-lg-12
+                    dùng thư viện carousel để trượt slide
+
+    content-section intro-area
+        container
+            row
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                    img
+                        overlay
+------------------------------------------------------------------------------------------------------------------
+footer-area
+    container
+        row
+            col col-12 col-sm-12 col-md-12  col-lg-12
+                row
+                    col col-12 col-sm-12 col-md-6  col-lg-3
+                        footer-heading
+                        footer-text
+                        ul
+                            li social-icon
+                            ...
+                    col col-12 col-sm-12 col-md-6  col-lg-3
+                        footer-heading
+                        ul
+                            li
+                            ...
+        row justify-content-center
+            col col-12 col-sm-12 col-md-12 col-lg-12
+}
+
+################################################################################################################################################                            
+*************************************************
+******************** DESTINATION **********************
+*************************************************
+header-area
+    container container-sm container-md container-lg
+        logo
+        NavBar
+            home
+            about
+            destination active
+            hotel
+            blog
+            contact
+------------------------------------------------------------------------------------------------------------------
+slider-area
+    overlay
+    container container-sm container-md container-lg
+        bread-case
+            home > destination
+        tour-list
+------------------------------------------------------------------------------------------------------------------
+main-area
+    content-section search-area
+        container container-sm container-md container-lg
+            row
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                    row
+                        col-lg-2-4
+                            place
+                        col-lg-2-4
+                            check-in-date
+                        col-lg-2-4
+                            check-out-date
+                        col-lg-2-4
+                            price
+                        col-lg-2-4
+                            search-large
+            
+    content-section tour-area
+        container
+            row justify-content-center
+                col col-12 col-sm-12 col-md-6 col-lg-4
+                    col-item
+                        img
+                        price
+                        text-box
+                            day
+                            'title'
+                            location
+                            ul
+                                li 
+                                li
+                                li
+                ...
+            row
+                col
+                    pagination
+
+    content-section intro-area
+        container
+            row
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                    img
+                        overlay
+------------------------------------------------------------------------------------------------------------------
+footer-area
+    container
+        row
+            col col-12 col-sm-12 col-md-12  col-lg-12
+                row
+                    col col-12 col-sm-12 col-md-6  col-lg-3
+                        footer-heading
+                        footer-text
+                        ul
+                            li social-icon
+                            ...
+                    col col-12 col-sm-12 col-md-6  col-lg-3
+                        footer-heading
+                        ul
+                            li
+                            ...
+        row justify-content-center
+            col col-12 col-sm-12 col-md-12 col-lg-12
+}
+
+################################################################################################################################################                            
+*************************************************
+******************** HOTEL **********************
+*************************************************
+header-area
+    container container-sm container-md container-lg
+        logo
+        NavBar
+            home
+            about
+            destination
+            hotel active
+            blog
+            contact
+------------------------------------------------------------------------------------------------------------------
+slider-area
+    overlay
+    container container-sm container-md container-lg
+        bread-case
+            home > hotel
+        hotel
+------------------------------------------------------------------------------------------------------------------
+main-area
+    content-section hotel-area
+        container container-sm container-md container-lg
+            row
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                    row
+                        col-lg-2-4
+                            place
+                        col-lg-2-4
+                            check-in-date
+                        col-lg-2-4
+                            check-out-date
+                        col-lg-2-4
+                            price
+                        col-lg-2-4
+                            search-large
+            
+    content-section tour-area
+        container
+            row justify-content-center
+                col col-12 col-sm-12 col-md-6 col-lg-4
+                    col-item
+                        img
+                        price
+                        text-box
+                            star
+                            day
+                            'title'
+                            location
+                            ul
+                                li 
+                                li
+                                li
+                ...
+            row
+                col
+                    pagination
+
+    content-section intro-area
+        container
+            row
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                    img
+                        overlay
+------------------------------------------------------------------------------------------------------------------
+footer-area
+    container
+        row
+            col col-12 col-sm-12 col-md-12  col-lg-12
+                row
+                    col col-12 col-sm-12 col-md-6  col-lg-3
+                        footer-heading
+                        footer-text
+                        ul
+                            li social-icon
+                            ...
+                    col col-12 col-sm-12 col-md-6  col-lg-3
+                        footer-heading
+                        ul
+                            li
+                            ...
+        row justify-content-center
+            col col-12 col-sm-12 col-md-12 col-lg-12
+}
+
+################################################################################################################################################                            
+*************************************************
+******************** HOTEL **********************
+*************************************************
+header-area
+    container container-sm container-md container-lg
+        logo
+        NavBar
+            home
+            about
+            destination
+            hotel
+            blog active
+            contact
+------------------------------------------------------------------------------------------------------------------
+slider-area
+    overlay
+    container container-sm container-md container-lg
+        bread-case
+            home > blog
+        blog
+------------------------------------------------------------------------------------------------------------------
+main-area
+    content-section blog-post-area
+        container
+            row justify-content-center
+                col col-12 col-sm-12 col-md-6 col-lg-4
+                    col-item
+                        img
+                        date
+                            month
+                            year
+                            day
+                        text-box
+                            'title'
+                            read-more button-sm
+                ...
+            row
+                col
+                    pagination
+
+    content-section intro-area
+        container
+            row
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                    img
+                        overlay
+------------------------------------------------------------------------------------------------------------------
+footer-area
+    container
+        row
+            col col-12 col-sm-12 col-md-12  col-lg-12
+                row
+                    col col-12 col-sm-12 col-md-6  col-lg-3
+                        footer-heading
+                        footer-text
+                        ul
+                            li social-icon
+                            ...
+                    col col-12 col-sm-12 col-md-6  col-lg-3
+                        footer-heading
+                        ul
+                            li
+                            ...
+        row justify-content-center
+            col col-12 col-sm-12 col-md-12 col-lg-12
+}
+
+################################################################################################################################################                            
+*************************************************
+******************** CONTACT **********************
+*************************************************
+header-area
+    container container-sm container-md container-lg
+        logo
+        NavBar
+            home
+            about
+            destination
+            hotel
+            blog
+            contact active
+------------------------------------------------------------------------------------------------------------------
+slider-area
+    overlay
+    container container-sm container-md container-lg
+        bread-case
+            home > contact
+        contact
+------------------------------------------------------------------------------------------------------------------
+main-area
+    content-section contact-info-area
+        container
+            row
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                row
+                    col col-12 col-sm-12 col-md-12 col-lg-3
+                        col-item
+                            img
+                            heading
+                            address
+                    col col-12 col-sm-12 col-md-12 col-lg-3
+                            img
+                            heading
+                            icon-text
+                    col col-12 col-sm-12 col-md-12 col-lg-3
+                            img
+                            heading
+                            icon-text
+                    col col-12 col-sm-12 col-md-12 col-lg-3
+                            img
+                            heading
+                            icon-text
+            row
+                col col-12 col-sm-12 col-md-12 col-lg-6
+                col col-12 col-sm-12 col-md-12 col-lg-6
+                    contact-form
+                        form-group
+                            form-control
+                        form-group
+                            <textarea cols='30' rows='7' form-control />                     
+                        ...
+                        form-group
+                            submit button-md
+
+    content-section intro
+        container
+            row
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                    img
+                        overlay
+------------------------------------------------------------------------------------------------------------------
+footer-area
+    container
+        row
+            col col-12 col-sm-12 col-md-12  col-lg-12
+                row
+                    col col-12 col-sm-12 col-md-6  col-lg-3
+                        footer-heading
+                        footer-text
+                        ul
+                            li social-icon
+                            ...
+                    col col-12 col-sm-12 col-md-6  col-lg-3
+                        footer-heading
+                        ul
+                            li
+                            ...
+        row justify-content-center
+            col col-12 col-sm-12 col-md-12 col-lg-12
+}
+
+################################################################################################################################################                            
+*************************************************
+******************** BLOG-DETAIL **********************
+*************************************************
+header-area
+    container container-sm container-md container-lg
+        logo
+        NavBar
+            home
+            about
+            destination
+            hotel
+            blog
+            contact active
+------------------------------------------------------------------------------------------------------------------
+slider-area
+    overlay
+    container container-sm container-md container-lg
+        bread-case
+            home > blog > blog-detail
+        {blog-detail-title}
+------------------------------------------------------------------------------------------------------------------
+main-area
+    content-section blog-area
+        row
+            col col-12 col-sm-12 col-md-12 col-lg-12
+                row
+                    col col-12 col-sm-12 col-md-12 col-lg-8
+                        single-blog
+                            img
+                            blog-detail
+                                h2
+                                blog-info
+                                blog-content
+                        blog-navigation
+                            <div>
+                                like-info
+                                    like-icon
+                                    who-like?
+                                social-icon
+                            navigation-area
+                                row
+                                    col col-12 col-sm-12 col-md-12 col-lg-12
+                                        row
+                                            col col-6 col-sm-6 col-md-6 col-lg-6
+                                                thumb (thumbnail image)
+                                                arrow
+                                                    left
+                                                ul
+                                                    li {prev blog}
+                                                    li {prev blog title}
+                                            col col-6 col-sm-6 col-md-6 col-lg-6
+                                                thumb (thumbnail image)
+                                                arrow
+                                                    right
+                                                ul
+                                                    li {next blog}
+                                                    li {next blog title}
+                        blog-author
+                            img
+                            author-info
+                        comment-area
+                            h4 {total comment}
+                            comment-list
+                                single-comment
+                                    user
+                                        thumb
+                                        description
+                                            comment
+                                            <div>
+                                                user-name
+                                                date
+                                                reply-btn
+                        comment-form
+                            h4 {Leave a Reply}
+                            comment-form
+                                form-group
+                                    <textarea cols='30' rows='7' form-control />
+                                form-group
+                                    form-control width 50%
+                                form-group
+                                    form-control width 50%
+                                form-group
+                                    form-control
+                                ...
+                                form-group
+                                    submit button-md
+
+                    col col-12 col-sm-12 col-md-12 col-lg-4
+                        blog-sidebar
+                            <aside search-widget>
+                                <form>
+                                    form-group
+                                        form-control
+                                    form-group
+                                        search-btn button-md
+                            <aside popular-blog-widget>
+                                widget-title
+                                post-item
+                                    img
+                                    post-item-info
+                                        <a>
+                                        <p>
+                            <aside tag-widget>
+                                widget-title
+                                ul tag-list
+                                    li
+                                    ...
+                            <aside newsletter_widget>
+                                widget-title
+                                <form>
+                                    form-group
+                                        form-control
+                                    form-group
+                                        search-btn button-md
+
+    content-section intro-area
+        container
+            row
+                col col-12 col-sm-12 col-md-12 col-lg-12
+                    img
+                        overlay
+------------------------------------------------------------------------------------------------------------------
+footer-area
+    container
+        row
+            col col-12 col-sm-12 col-md-12  col-lg-12
+                row
+                    col col-12 col-sm-12 col-md-6  col-lg-3
+                        footer-heading
+                        footer-text
+                        ul
+                            li social-icon
+                            ...
+                    col col-12 col-sm-12 col-md-6  col-lg-3
+                        footer-heading
+                        ul
+                            li
+                            ...
+        row justify-content-center
+            col col-12 col-sm-12 col-md-12 col-lg-12
+}
+
+################################################################################################################################################                            
+
+

@@ -1,5 +1,5 @@
 header-area
-    cButtonontainer container-sm container-md container-lg
+    container container-sm container-md container-lg
         logo
         NavBar
             home active
@@ -9,7 +9,7 @@ header-area
             blog
             contact
 ------------------------------------------------------------------------------------------------------------------
-slider-area
+slider-area 
     overlay
     container container-sm container-md container-lg
         row

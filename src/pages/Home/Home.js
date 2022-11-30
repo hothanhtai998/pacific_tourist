@@ -1,8 +1,9 @@
 import Slide from '~/layouts/components/Slide';
 import images from '~/assets/images';
+import Search from '~/layouts/components/Search';
+import Section from '~/layouts/components/Section';
 
 function Home() {
-  console.log(images);
   const data = {
     img: images.homeSlide,
     alt: 'Mountain',
@@ -14,6 +15,8 @@ function Home() {
   return (
     <div>
       <Slide data={data} />
+      <Search />
+      <Section />
     </div>
   );
 }

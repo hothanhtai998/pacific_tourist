@@ -1,1 +1,26 @@
-.Search {}
+.search-area {
+  margin-top: -100px;
+
+  span {
+    background: var(--white);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: var(--gray);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28.8px;
+    outline: none;
+    padding: 10px 30px;
+    position: relative;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: -10px;
+    transition: all 0.3s ease 0s;
+  }
+  span.isActive {
+    background: var(--primary);
+    color: var(--white);
+  }
+}

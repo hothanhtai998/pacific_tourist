@@ -2,7 +2,6 @@
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 /* Inside Source */
-import '~/assets/styles/grid.css';
 
 import styles from './Search.module.scss';
 import TourSearch from './TourSearch';

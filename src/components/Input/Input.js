@@ -13,7 +13,7 @@ function Input({ data }) {
 }
 
 Input.propTypes = {
-  data: PropTypes.string.isRequired,
+  data: PropTypes.object.isRequired,
 };
 
 export default Input;

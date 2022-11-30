@@ -1,0 +1,26 @@
+.col-item {
+  display: flex;
+  align-items: center;
+  color: #999999;
+  line-height: 28.8px;
+  opacity: 0;
+  padding: 60px 30px;
+  position: relative;
+  margin-top: 50px;
+  visibility: hidden;
+  width: 100%;
+  animation: fadeInUp 0.5s ease 0s 1 normal both running;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 40px, 0px);
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+}

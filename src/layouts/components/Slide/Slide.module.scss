@@ -1,6 +1,116 @@
-.Slide {
+.slide-area {
+  position: relative;
 }
-.slide-img {
-  width: 300px;
-  height: 300px;
+.container {
+  position: absolute;
+  top: 90%;
+  transform: translateY(-100%);
+  padding: 0 16px;
+  align-items: center;
+}
+
+.sub-title {
+  color: var(--primary);
+  font-size: 2.6rem;
+  line-height: 54px;
+}
+.title {
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 36px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.caption {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.play-video-btn {
+  position: relative;
+  line-height: 28.8px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 6.96241px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  padding: 40px;
+  transition: all 0.3s ease 0s;
+
+  &::after {
+    content: '';
+    // justify-content: flex-end;
+    position: absolute;
+    left: 32px;
+    top: 24px;
+    border-width: 16px 24px;
+    border-style: solid;
+    border-color: transparent transparent transparent #f15d30;
+  }
+}
+
+/* Mobile:  ip 6+,7+,8+*/
+@media (min-width: 414px) and(max-width: 736px) {
+  .container {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Mobile:  ip x,11,12*/
+@media (min-width: 375px) and (max-width: 812px) {
+  .container {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .play-video-btn {
+    position: absolute;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .play-video-btn {
+    left: 90%;
+    top: 50%;
+    transform: translate(-90%, -50%);
+  }
+}
+
+/* i-pad mini: */
+@media (min-width: 739px) and (max-width: 1023px) {
+  .title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 50px;
+  }
+  .play-video-btn {
+    left: 90%;
+    top: 50%;
+    transform: translate(-90%, -50%);
+  }
+}
+
+/* PC, i-pad pro: */
+@media (min-width: 1023px) {
+  .container {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .sub-title {
+    font-size: 3rem;
+    line-height: 54px;
+  }
+  .title {
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 66px;
+  }
+  .play-video-btn {
+    left: 90%;
+    top: 50%;
+    transform: translate(-90%, -50%);
+  }
 }

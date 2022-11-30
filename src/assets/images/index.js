@@ -1,6 +1,6 @@
 const images = {
-  homeSlide: require('./bg-img/bg_5.jpg').default,
-  noImage: require('./no-image.png'),
+  homeSlide: require('~/assets/images/bg-img/bg_5.jpg'),
+  noImage: require('~/assets/images/no-image.png'),
 };
 
 export default images;

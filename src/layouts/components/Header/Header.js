@@ -1,13 +1,16 @@
 // import outside library
 import classNames from 'classnames/bind';
 
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // import css
+import '~/assets/styles/grid.css';
+
 import styles from './Header.module.scss';
 
-import config from '../../../config';
+import config from '~/config';
 import { Nav, NavItem } from './Nav';
+import Button from '~/components/Button';
 
 const cx = classNames.bind(styles);
 
@@ -19,6 +22,7 @@ function Header() {
           Pacific
           <span>Travel Agency</span>
         </Link>
+        <Button className={cx('nav-menu')}>Menu</Button>
         <Nav>
           <NavItem to={config.routes.home} title='home'></NavItem>
           <NavItem to={config.routes.about} title='about'></NavItem>

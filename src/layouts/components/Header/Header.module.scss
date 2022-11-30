@@ -1,31 +1,30 @@
 .wrapper {
-  // position: absolute;
+  position: absolute;
   z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  min-height: 105px;
-  background-color: blue;
+  background-color: var(--black);
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: var(--default-width);
-  height: 100%;
-  padding: 0 24px;
+  max-width: 1140px;
+  margin: auto;
+
+  padding: 0 16px;
+  min-height: 70px;
 }
 
 .brand {
   font-size: 2.4rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 28.8px;
   color: var(--white);
   margin-right: 1rem;
+  outline: none;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
+  outline: none;
 
   transition: all 0.3s ease 0s;
   white-space: nowrap;
@@ -36,8 +35,55 @@
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 12px;
-  color: var(--orange);
+  color: var(--primary);
 
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.nav-menu {
+  color: var(--gray);
+  position: absolute;
+  right: 16px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+/* Media query */
+
+/* Mobile:  */
+@media (max-width: 739px) {
+}
+
+/* Tablet: */
+@media (min-width: 739px) and (max-width: 1023px) {
+}
+
+/* Mobile - Tablet */
+@media (max-width: 1023px) {
+}
+
+/* PC: */
+@media (min-width: 1023px) {
+  .wrapper {
+    background-color: transparent;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+    margin: auto;
+
+    padding: 0 12px;
+    min-height: 105px;
+  }
+  .nav-menu {
+    display: none;
+  }
 }

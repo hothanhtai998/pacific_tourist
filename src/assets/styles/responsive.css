@@ -1,0 +1,17 @@
+/* Media query */
+
+/* Mobile:  */
+@media (width <= 739px) {
+}
+
+/* Tablet: */
+@media (739px <= width <= 1023px) {
+}
+
+/* Mobile - Tablet */
+@media (width <= 1023px) {
+}
+
+/* PC: */
+@media (width >= 1113px) {
+}

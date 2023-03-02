@@ -1,0 +1,39 @@
+.col-item {
+  line-height: 28.8px;
+  text-align: left;
+  background-color: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 5px 21px -14px;
+  padding: 24px 20px;
+  margin-top: 30px;
+
+  & .star {
+    color: var(--primary);
+  }
+
+  & > p {
+    color: #999;
+    line-height: 28.8px;
+  }
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.user-info p {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28.8px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 30px;
+}
+.user-info p + p {
+  color: #f15d30;
+  font-size: 16px;
+  line-height: 28.8px;
+}

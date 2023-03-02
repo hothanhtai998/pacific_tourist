@@ -1,0 +1,29 @@
+.about-image {
+  border: 15px solid #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 10px 23px -8px;
+  color: #999999;
+  line-height: 28.8px;
+  margin-top: -100px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* PC: */
+@media (min-width: 1200px) {
+  .about-image {
+    margin-bottom: 0;
+  }
+}

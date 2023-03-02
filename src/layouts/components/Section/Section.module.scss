@@ -1,6 +1,32 @@
 .section-area {
-  line-height: 28.8px;
-  padding: 112px 0;
   position: relative;
   width: 100%;
+  line-height: 28.8px;
+  z-index: 0;
+  padding: 112px 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Mobile:  ip 6+,7+,8+*/
+@media (min-width: 414px) and(max-width: 736px) {
+}
+
+/* Mobile:  ip x,11,12*/
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* PC, i-pad pro: */
+@media (min-width: 1200) {
+  .section-area {
+    padding: 112px 0;
+  }
 }

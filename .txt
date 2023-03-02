@@ -1,3 +1,25 @@
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* PC: */
+@media (min-width: 1200px) {
+
+}
+
+
+
+
 header-area
     container container-sm container-md container-lg
         logo
@@ -99,11 +121,8 @@ main-area
                                 li
                 ...
 
-    content-section about-img-area
-        overlay
-        container
-
     content-section about-area
+        overlay
         container
             row
                 col col-12 col-sm-12 col-md-6 col-lg-12

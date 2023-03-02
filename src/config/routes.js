@@ -4,6 +4,7 @@ const routes = {
   destination: '/destination',
   hotel: '/hotel',
   blog: '/blog',
+  singleblog: '/singleblog',
   contact: '/contact',
 };
 

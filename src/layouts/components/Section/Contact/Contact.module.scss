@@ -1,0 +1,36 @@
+.col-item {
+  min-height: 285px;
+  width: 100%;
+  line-height: 28.8px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  outline: none;
+
+  & div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    line-height: 28.8px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    color: #999999;
+    margin: 0px auto 15px;
+    outline: none;
+  }
+  & h3 {
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 8px;
+    outline: none;
+  }
+  & p {
+    color: #999999;
+    line-height: 28.8px;
+    margin-bottom: 8px;
+    outline: none;
+  }
+}

@@ -8,51 +8,34 @@ import TourSearch from './TourSearch';
 
 const cx = classNames.bind(styles);
 
-function Search() {
-  const data = [
-    // title: ['destination', 'check-in-date', 'check-out-date', 'price'],
-    // inputType: ['text', 'date', 'number'],
-    {
-      title: 'destination',
-      type: 'text',
-      placeholder: 'Search place',
-    },
-    {
-      title: 'check-in-date',
-      type: 'date',
-      placeholder: 'Check In Date',
-    },
-    {
-      title: 'check-out-date',
-      type: 'date',
-      placeholder: 'Check Out Date',
-    },
-    {
-      title: 'price',
-      type: 'select',
-      value: [100, 200, 300, 400, 500],
-      placeholder: 'pri',
-    },
-    {
-      title: 'search',
-      type: 'button',
-    },
-  ];
+function Search({ page }) {
+  const isHomePage = String(page).toLowerCase();
+  const mTop = -100;
+
   return (
-    <div className={cx('search-area')}>
+    <div
+      style={{ marginTop: isHomePage === 'home' ? mTop : 100 }}
+      className={cx('search-area')}
+    >
       {/* {isTourSearch ? <TourSearch /> : <HotelSearch />} */}
       <div className='grid wide'>
         <div className='row'>
+          {isHomePage === 'home' && (
+            <div className='col col-sm-12 col-md-12 col-lg-12'>
+              <Link>
+                <span className={cx('isActive', 'search-heading')}>
+                  Search Tour
+                </span>
+              </Link>
+              <Link>
+                <span className={cx('search-heading')}> Hotel</span>
+              </Link>
+            </div>
+          )}
           <div className='col col-sm-12 col-md-12 col-lg-12'>
-            <Link>
-              <span className={cx('isActive')}> Search Tour</span>
-            </Link>
-            <Link>
-              <span> Hotel</span>
-            </Link>
-          </div>
-          <div className={cx('wrapper')}>
-            <TourSearch data={data} />
+            <div className={cx('wrapper')}>
+              <TourSearch />
+            </div>
           </div>
         </div>
       </div>

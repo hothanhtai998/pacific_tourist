@@ -1,0 +1,136 @@
+.blog-right-sidebar {
+  margin: 60px 0;
+}
+.single-sidebar {
+  background: #fbf9ff;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.form-group {
+  margin-bottom: 16px;
+}
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 16px;
+}
+.form-control {
+  height: 50px;
+  border-color: #f0e9ff;
+  font-size: 13px;
+  color: #999999;
+  padding-left: 20px;
+  border-radius: 0;
+  border-right: 0;
+  width: 100%;
+}
+.single-sidebar {
+}
+.post-category {
+  & .category-list li {
+    border-bottom: 1px solid #f0e9ff;
+    transition: all 0.3s ease 0s;
+    padding-bottom: 12px;
+    & a {
+      font-size: 14px;
+      line-height: 20px;
+
+      & p {
+        transition: all ease 0.5s;
+        color: #666666 !important;
+        margin-bottom: 0;
+        &:hover {
+          color: var(--primary) !important;
+        }
+      }
+    }
+  }
+}
+.sidebar-title {
+  font-size: 20px;
+  margin-bottom: 40px;
+  font-style: inherit;
+  font-weight: 400;
+  color: #2a2a2a;
+  &::after {
+    content: '';
+    display: block;
+    padding-top: 15px;
+    border-bottom: 1px solid #f0e9ff;
+  }
+}
+
+// .popular-post {
+// }
+
+.instagram-row {
+  display: flex;
+  margin-right: -6px;
+  margin-left: -6px;
+  flex-wrap: wrap;
+  & li {
+    width: 33.33%;
+    float: left;
+    padding-right: 6px;
+    padding-left: 6px;
+    & .image-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.tag-cloud {
+  & ul li {
+    display: inline-block;
+  }
+  & ul li a {
+    border: 1px solid #eeeeee;
+    background: #fff;
+    padding: 6px 20px;
+    margin-bottom: 8px;
+    margin-right: 6px;
+    transition: all 0.5s ease;
+    color: #888888;
+    font-size: 1.2rem;
+    &:hover {
+      color: var(--white);
+      background-color: var(--primary);
+    }
+  }
+}
+
+.newsletter {
+  margin-bottom: -60px;
+}
+.full-width {
+  width: 100%;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .blog-right-sidebar {
+    margin: 40px 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .blog-right-sidebar {
+    margin: 0;
+  }
+}
+
+/* PC: */
+@media (min-width: 1200px) {
+  .blog-right-sidebar {
+    margin: 0;
+  }
+  .newsletter {
+    margin-bottom: 0;
+  }
+}

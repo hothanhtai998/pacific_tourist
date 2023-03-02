@@ -1,0 +1,107 @@
+.col-item {
+  position: relative;
+  color: #999999;
+  line-height: 28.8px;
+  margin-bottom: 30px;
+  animation: fadeInUp 0.5s ease 0s 1 normal both running;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+
+.price {
+  position: absolute;
+  display: inline-block;
+  top: -8px;
+  left: 20px;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px;
+  transition: all 0.3s ease 0s;
+
+  &:after {
+    position: absolute;
+    left: -8px;
+    top: 0;
+    content: '';
+    border-color: transparent transparent rgb(199, 57, 13);
+    border-style: solid;
+    border-width: 0 0 8px 8px;
+  }
+  &:before {
+    position: absolute;
+    right: -8px;
+    top: 0;
+    content: '';
+    border-color: transparent transparent transparent rgb(199, 57, 13);
+    border-style: solid;
+    border-width: 8px 0 0 8px;
+  }
+}
+.text-box {
+  position: relative;
+  width: 90%;
+  top: 0;
+  line-height: 28.8px;
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 10px 23px -8px;
+  margin: -40px auto 0;
+  padding: 24px;
+  text-align: left;
+}
+.day {
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.box-title {
+  background-color: transparent;
+  line-height: 1.5;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--black);
+  cursor: pointer;
+  margin-bottom: 0;
+  transition: all 0.3s ease 0s;
+}
+.location {
+  color: #999999;
+  line-height: 28.8px;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+.des-list {
+  display: flex;
+  list-style: none;
+}
+.des-list li + li {
+  margin-left: 14px;
+}
+.des-list li {
+  color: #b3b3b3;
+  line-height: 28.8px;
+}
+
+.icon {
+  color: #f15d30;
+  font-size: 20px;
+  line-height: 36px;
+  margin-right: 4px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 40px, 0px);
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+}

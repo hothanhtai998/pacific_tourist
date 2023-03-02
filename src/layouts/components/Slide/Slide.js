@@ -6,35 +6,44 @@ import classNames from 'classnames/bind';
 import '~/assets/styles/grid.css';
 import styles from './Slide.module.scss';
 import Overlay from '~/layouts/components/Overlay';
+import HomeSlide from './HomeSlide/HomeSlide';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
-function Slide({ data }) {
-  const { img, title, subTitle, caption } = data;
+function Slide({ data, className }) {
+  const prePage = String(data.prePage).toLowerCase();
+  const curPage = String(data.curPage).toLowerCase();
+  const { img } = data;
   const styles = {
-    width: '100vw',
-    height: '100vh',
     backgroundImage: `url(${img})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center center',
-    backgroundAttachment: 'fixed',
   };
-
   return (
-    <div style={styles} className={cx('slide-area')}>
+    <div style={styles} className={cx('slide-area', className)}>
       <Overlay />
       <div className='grid wide'>
-        <div className={cx('container')}>
-          <div className='row sm-gutter'>
-            <div className='col col-sm-12 col-md-9 col-lg-8'>
-              <span className={cx('sub-title')}>{subTitle}</span>
-              <h1 className={cx('title')}>{title}</h1>
-              <p className={cx('caption')}>{caption}</p>
-            </div>
-            <div className='col col-sm-12 col-md-3 col-lg-4'>
-              <button className={cx('play-video-btn')}></button>
-            </div>
+        <div className={cx('row')}>
+          <div className={cx('col-sm-12 col-md-12 col-lg-12')}>
+            {curPage === 'home' ? (
+              <HomeSlide className='container' data={data} />
+            ) : (
+              <div className={cx('row', 'container')}>
+                <div className={cx('col-sm-12 col-md-12 col-lg-12')}>
+                  <div className={cx('breadcrumbs')}>
+                    <Link
+                      onClick={() => window.scrollTo(0, 0)}
+                      to={prePage === 'home' ? '/' : `/${prePage}`}
+                    >
+                      {prePage} &gt;
+                    </Link>
+                    <span>{curPage} &gt;</span>
+                  </div>
+                </div>
+                <div className={cx('col-sm-12 col-md-12 col-lg-12')}>
+                  <h1 className={cx('page')}>{curPage}</h1>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>

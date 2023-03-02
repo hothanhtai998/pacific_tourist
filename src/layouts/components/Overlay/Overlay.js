@@ -6,8 +6,8 @@ import styles from './Overlay.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Overlay() {
-  return <div className={cx('overlay')}></div>;
+function Overlay({ className = 'overlay' }) {
+  return <div className={cx(className)}></div>;
 }
 
 export default Overlay;

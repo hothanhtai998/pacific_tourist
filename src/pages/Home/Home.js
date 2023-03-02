@@ -1,34 +1,64 @@
 import Slide from '~/layouts/components/Slide';
 import images from '~/assets/images';
+import Overlay from '~/layouts/components/Overlay';
 import Search from '~/layouts/components/Search';
 import Section from '~/layouts/components/Section';
 import Service from '~/layouts/components/Section/Service';
+import Destination from '~/layouts/components/Section/Destination';
+import Place from '~/layouts/components/Section/Place';
+import About from '~/layouts/components/Section/About';
+import BlogPost from '~/layouts/components/Section/BlogPost';
+import Introduce from '~/layouts/components/Section/Introduce';
+import VideoButton from '~/components/Button/VideoButton';
+
+const slideData = {
+  img: images.homeSlide,
+  alt: 'Mountain',
+  subTitle: 'Welcome to Pacific',
+  title: 'Discover Your Favorite Place with Us',
+  captions: [
+    'Travel to the any corner of the world, without going around in circles',
+  ],
+  prePage: '',
+  curPage: 'home',
+};
 
 function Home() {
-  const data = {
-    img: images.homeSlide,
-    alt: 'Mountain',
-    subTitle: 'Welcome to Pacific',
-    title: 'Discover Your Favorite Place with Us',
-    caption:
-      'Travel to the any corner of the world, without going around in circles',
-  };
-  const serviceData = {
-    subTitle: 'Welcome to Pacific',
-    title: "It's time to start your adventure",
-    captions: [
-      'A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
-      'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.',
-    ],
-  };
   return (
-    <div>
-      <Slide data={data} />
-      <Search />
+    <>
+      <Slide data={slideData} />
+      <Search page={slideData.curPage} />
       <Section>
-        <Service data={serviceData} />
+        <Service />
       </Section>
-    </div>
+      <Section className='text-center' image={images.placeBg}>
+        <Place />
+      </Section>
+      <Section className='text-center'>
+        <Destination />
+      </Section>
+      <Section padtb={220} className='text-center' image={images.about[0]}>
+        <Overlay />
+        <div className='row'>
+          <div className='col-sm-12'>
+            <VideoButton />
+          </div>
+        </div>
+      </Section>
+      <Section>
+        <About />
+      </Section>
+      <Section
+        className={`${
+          window.matchMedia('(min-width: 1200px)').matches ? '' : 'pt-0'
+        } text-center`}
+      >
+        <BlogPost page={slideData.page} />
+      </Section>
+      <Section className='text-center'>
+        <Introduce />
+      </Section>
+    </>
   );
 }
 

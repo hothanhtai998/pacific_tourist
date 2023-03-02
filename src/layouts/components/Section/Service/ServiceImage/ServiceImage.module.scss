@@ -1,24 +1,27 @@
 .col-item {
   position: relative;
   width: 100%;
-  background: var(--primary);
+  background-color: var(--primary);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 0;
   padding: 30px;
   margin-bottom: 30px;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s ease;
 }
-.icon {
+.iconBox {
+  position: relative;
   width: 115px;
   height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f15d30;
   margin-left: -35px;
   margin-bottom: 10px;
-  background: #f15d30;
-  position: relative;
 }
-.icon:after {
+.iconBox:after {
   position: absolute;
   content: '';
   top: -5px;
@@ -27,6 +30,14 @@
   border-width: 0 0 5px 5px;
   border-color: transparent transparent #c7390d transparent;
 }
+
+.icon {
+  color: var(--white);
+  display: block;
+  font-size: 50px;
+  line-height: 65px;
+}
+
 h3 {
   color: var(--white);
   font-size: 18px;
@@ -51,11 +62,31 @@ p {
   z-index: -1;
 }
 .color-1:after {
-  background: #1089ff;
+  background-color: #1089ff;
 }
 .color-2:after {
-  background: #048998;
+  background-color: #048998;
 }
 .color-3:after {
-  background: #ff5959;
+  background-color: #ff5959;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-item {
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+  .iconBox {
+    margin-left: -20px;
+  }
+}
+
+/* PC: */
+@media (min-width: 1200px) {
 }

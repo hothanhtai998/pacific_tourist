@@ -1,13 +1,14 @@
 //
-import config from '../config';
+import config from '~/config';
 
 //* page
-import Home from '../pages/Home';
-import About from '../pages/About';
-import Destination from '../pages/Destination';
-import Hotel from '../pages/Hotel';
-import Blog from '../pages/Blog';
-import Contact from '../pages/Contact';
+import Home from '~/pages/Home';
+import AboutPage from '~/pages/AboutPage';
+import DestinationPage from '~/pages/DestinationPage';
+import HotelPage from '~/pages/HotelPage';
+import BlogPage from '~/pages/BlogPage';
+import SingleBlogPage from '~/pages/SingleBlogPage';
+import ContactPage from '~/pages/ContactPage';
 
 //* Public Routes
 const publicRoutes = [
@@ -17,23 +18,27 @@ const publicRoutes = [
   },
   {
     path: config.routes.about,
-    component: About,
+    component: AboutPage,
   },
   {
     path: config.routes.destination,
-    component: Destination,
+    component: DestinationPage,
   },
   {
     path: config.routes.hotel,
-    component: Hotel,
+    component: HotelPage,
   },
   {
     path: config.routes.blog,
-    component: Blog,
+    component: BlogPage,
+  },
+  {
+    path: config.routes.singleblog,
+    component: SingleBlogPage,
   },
   {
     path: config.routes.contact,
-    component: Contact,
+    component: ContactPage,
   },
 ];
 

@@ -1,0 +1,132 @@
+.container {
+  padding-bottom: 30px;
+}
+.col-item {
+  color: #999999;
+  line-height: 28.8px;
+  padding: 20px 0;
+  margin-bottom: 16px;
+  h2 {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 30px;
+  }
+  p {
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 28.8px;
+    margin-bottom: 12px;
+  }
+}
+ul li {
+  color: rgba(0, 0, 0, 0.5);
+  display: block;
+  line-height: 28.8px;
+  padding: 4px 0;
+}
+.ft-icon li {
+  list-style: none;
+  margin: 0 10px 0 0;
+  display: inline-block;
+  & a {
+    height: 40px;
+    width: 40px;
+    display: block;
+    float: left;
+    color: #f15d30;
+    border-radius: 50%;
+    position: relative;
+    background: #f15d30;
+    & i {
+      position: absolute;
+      font-size: 1.8rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff !important;
+    }
+  }
+}
+.list li {
+  display: flex;
+  & i {
+    font-size: 3.2rem;
+    padding: 0 10px 0 0;
+  }
+  a:hover {
+    color: var(--primary);
+    transition: all 0.6s ease;
+  }
+}
+.border-left {
+  border-left: 1px solid #dee2e6 !important;
+}
+.copy-right {
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 28.8px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Mobile:  ip 6+,7+,8+*/
+@media (min-width: 414px) and(max-width: 736px) {
+}
+
+/* Mobile:  ip x,11,12*/
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .play-video-btn {
+    left: 90%;
+    top: 50%;
+    transform: translate(-90%, -50%);
+  }
+}
+
+/* i-pad mini: */
+@media (min-width: 739px) and (max-width: 1199px) {
+  .col-item {
+    padding: 30px 0;
+    margin-bottom: 24px;
+    h2 {
+      margin-bottom: 40px;
+    }
+    p {
+      margin-bottom: 16px;
+    }
+  }
+  ul li {
+    padding: 8px 0;
+  }
+  .column {
+    padding-top: 48px;
+  }
+  .copy-right {
+    margin-top: 30px;
+  }
+}
+
+/* PC, i-pad pro: */
+@media (min-width: 1200px) {
+  .col-item {
+    padding: 30px 0;
+    margin-bottom: 24px;
+    h2 {
+      margin-bottom: 40px;
+    }
+    p {
+      margin-bottom: 16px;
+    }
+  }
+  ul li {
+    padding: 8px 0;
+  }
+  .column {
+    padding-top: 48px;
+  }
+  .copy-right {
+    margin-top: 30px;
+  }
+}

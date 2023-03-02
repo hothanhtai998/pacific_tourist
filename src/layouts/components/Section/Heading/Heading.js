@@ -4,24 +4,30 @@ import classNames from 'classnames/bind';
 
 /* Inside Source */
 import styles from './Heading.module.scss';
+import Button from '~/components/Button';
 
 const cx = classNames.bind(styles);
 
-function Heading({ data }) {
-  const { subTitle, title, captions } = data;
+function Heading({ data, className }) {
+  const { subTitle, title, captions, buttonText } = data;
+  const mBot = captions.length > 0 ? 0 : 60;
   return (
-    <div className={cx('col-item')}>
-      <span className={cx('sub-title')}>{subTitle}</span>
-      <h2 className={cx('title')}>{title}</h2>
-      {captions.length > 1
-        ? captions.map((caps, key) => {
-            return (
-              <p key={key} className={cx('caption')}>
-                {caps}
-              </p>
-            );
-          })
-        : ''}
+    <div style={{ marginBottom: mBot }} className={cx('col-item')}>
+      <span className={cx('sub-title', className)}>{subTitle}</span>
+      <h2 className={cx('title', className)}>{title}</h2>
+      {captions.length > 0 &&
+        captions.map((caps, key) => {
+          return (
+            <p key={key} className={cx('caption')}>
+              {caps}
+            </p>
+          );
+        })}
+      {captions.length > 0 && (
+        <Button to={'/destination'} primary>
+          {buttonText}
+        </Button>
+      )}
     </div>
   );
 }

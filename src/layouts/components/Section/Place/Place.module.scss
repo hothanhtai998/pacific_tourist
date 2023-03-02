@@ -1,0 +1,73 @@
+.text {
+  position: relative;
+  height: 320px;
+  color: var(--primary);
+  cursor: pointer;
+  line-height: 28.8px;
+  outline: none;
+  padding: 20px;
+}
+
+.text h3 {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--primary);
+  outline: none;
+
+  margin-top: -8px;
+  padding: 4px 10px;
+}
+.text h3::after {
+  position: absolute;
+  left: -8px;
+  top: 0px;
+  content: '';
+  border-color: transparent transparent rgb(199, 57, 13);
+  border-style: solid;
+  border-width: 0px 0px 8px 8px;
+}
+
+.text h3::before {
+  position: absolute;
+  right: -8px;
+  top: 0px;
+  content: '';
+  border-color: transparent transparent transparent rgb(199, 57, 13);
+  border-style: solid;
+  border-width: 8px 0px 0px 8px;
+}
+
+.text span {
+  position: absolute;
+  bottom: 20px;
+  right: -5px;
+  display: inline-block;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 20px 0 0 20px;
+  outline: none;
+
+  padding: 4px 5px 4px 15px;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.text:hover span {
+  background-color: #f15d30;
+  padding-right: 20px;
+}
+.text span::after {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  content: '';
+  border-style: solid;
+  border-width: 5px 0 0 5px;
+  border-color: transparent transparent transparent #c7390d;
+}

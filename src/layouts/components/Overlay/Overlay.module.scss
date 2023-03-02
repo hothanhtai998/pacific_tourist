@@ -6,5 +6,30 @@
   bottom: 0;
   content: '';
   opacity: 0.3;
-  background: #000000;
+  background-color: var(--black);
+}
+
+.overlay-1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  color: #999999;
+  background: linear-gradient(45deg, #207ce5 0%, #13d42a 100%);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.overlay-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background-color: #040e26;
+  opacity: 0.6;
+  z-index: -1;
 }

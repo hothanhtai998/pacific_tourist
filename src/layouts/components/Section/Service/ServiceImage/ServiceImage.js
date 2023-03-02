@@ -13,9 +13,11 @@ function ServiceImage({ data }) {
   };
 
   return (
-    <div className='col col-sm-12 col-md-12 col-lg-6'>
+    <div className='col col-sm-12 col-md-6 col-lg-6'>
       <div style={style} className={cx('col-item', `color-${data.color}`)}>
-        <div className={cx('icon')}></div>
+        <div className={cx('iconBox')}>
+          <span className={cx('icon', data.className)}></span>
+        </div>
         <>
           <h3>{data.title}</h3>
           <p>{data.caption}</p>

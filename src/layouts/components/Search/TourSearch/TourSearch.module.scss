@@ -1,9 +1,11 @@
 .col-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   line-height: 28.8px;
-
   padding: 15px;
-  position: relative;
   background-color: var(--white);
 }
 
@@ -18,42 +20,101 @@ label {
   text-transform: uppercase;
 }
 
-// .input-form {
-//   background: var(--white);
-//   border-radius: 5px;
+.input-form {
+  background-color: var(--white);
+  border-radius: 5px;
 
-//   color: var(--black);
-//   display: block;
+  color: var(--black);
+  display: block;
 
-//   font-size: 16px;
-//   font-weight: 400;
-//   height: 52px;
-//   line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  height: 52px;
+  line-height: 24px;
 
-//   overflow: visible;
-//   padding: 0px 0px 0px 20px;
-//   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
-//     -webkit-box-shadow 0.15s ease-in-out 0s;
-//   width: 100%;
+  overflow: visible;
+  padding: 0px 0px 0px 20px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s,
+    -webkit-box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
 
-//   &:focus {
-//     background-color: var(--white);
-//     border-color: rgb(0, 0, 0);
-//     box-shadow: rgba(0, 123, 255, 0.25) 0px 0px 0px 0.2rem;
-//     color: #495057;
-//     outline: 0px;
-//   }
+  &:focus {
+    background-color: var(--white);
+    border-color: rgb(0, 0, 0);
+    box-shadow: rgba(0, 123, 255, 0.25) 0px 0px 0px 0.2rem;
+    color: #495057;
+    outline: 0px;
+  }
 
-//   &:disabled {
-//     background-color: #e9ecef;
-//     opacity: 1;
-//   }
-//   &:active {
-//     border-color: rgb(0, 0, 0);
-//   }
+  &:disabled {
+    background-color: #e9ecef;
+    opacity: 1;
+  }
+  &:active {
+    border-color: rgb(0, 0, 0);
+  }
 
-//   ::placeholder {
-//     color: #6c757d;
-//     opacity: 1;
-//   }
-// }
+  ::placeholder {
+    color: #6c757d;
+    opacity: 1;
+  }
+}
+
+.col-item:has([type*='button']) {
+  text-align: center;
+  background-color: var(--primary);
+  cursor: pointer;
+  min-height: 70px;
+
+  & label {
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  & input {
+    cursor: pointer;
+    height: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-item {
+    padding: 6px;
+  }
+  label {
+    font-size: 1.3rem;
+  }
+  .col-item {
+    min-height: 90px;
+  }
+  .col-item:has([type*='button']) {
+    min-height: 90px;
+  }
+  input {
+    &::placeholder {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .col-item {
+    min-height: 110px;
+  }
+  .col-item:has([type*='button']) {
+    min-height: 110px;
+  }
+}
+
+/* PC: */
+@media (min-width: 1200px) {
+  .col-item {
+    min-height: 110px;
+  }
+  .col-item:has([type*='button']) {
+    min-height: 110px;
+  }
+}
